@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+/*aqui seria o corpo do navegador*/
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #d4d4d4;
+  background-color: #050a27;
+}
+
+header {
+  background: #030a31;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+/*menu de navegação*/
+nav a {
+  margin: 0 1rem;
+  color: rgba(255, 255, 255, 0.959);
+  text-decoration: none;
+}
+
+/* espaçamento entre os textos, mas aí eu utilizei o <p> para me guiar */
+p {
+  margin-bottom: 1rem; 
+}
+
+section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+main {
+  flex: 1;
+}
+
+.projetos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.projeto {
+  background: rgb(1, 1, 43);
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #02082b;
+  margin-top: auto;
+}
+/*edição da imagem*/
+.foto-perfil {
+  display: block;
+  margin: 0 auto 1.5rem;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.byPaola {
+  margin-left: 80%;
+}
